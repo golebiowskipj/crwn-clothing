@@ -7,7 +7,16 @@ module.exports = {
         }
     },
     "rules": {
-        "semi": "error",
-        "quotes": [2, "double"]
+        "semi": [2, "always"],
+        "quotes": [2, "double"],
+        "jsx-quotes": [2, "prefer-double"],
+        "no-console": 1,
+        "newline-before-return": 2,
+        "comma-dangle": ["error", "never"],
+
+    },
+    "env": {
+        "browser": true,
+        "node": true
     }
 }
