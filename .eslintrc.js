@@ -1,4 +1,5 @@
 module.exports = {
+    "extends": ["eslint:recommended","plugin:react/recommended"],
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module",
@@ -12,11 +13,13 @@ module.exports = {
         "jsx-quotes": [2, "prefer-double"],
         "no-console": 1,
         "newline-before-return": 2,
-        "comma-dangle": ["error", "never"],
-
+        "comma-dangle": [2, "never"],
+        "no-unused-vars": 0,
+        "react/prop-types": 0
     },
     "env": {
         "browser": true,
-        "node": true
+        "node": true,
+        "jest": true
     }
 }
